@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/ac42c3b1f7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!--Navbar for large devices-->
+    <div class="d-none d-sm-none d-md-block" >
+        <nav
+          class="navbar navbar-expand-lg navbar-dark"
+          style="background-color: #00012b"
+        >
+          <div class="container ">
+            <a class="navbar-brand " href="#">
+              <img src="assessts/gnilogo.png" class="gni-logo " />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ml-auto">
+                <a
+                  class="nav-link active span2 btn-one"
+                  id="navItem1"
+                  href="#AboutGNI"
+                >
+                  About
+                  <span class="sr-only">(current)</span>
+                </a>
+                <a
+                  class="nav-link span2 btn-one"
+                  href="#HRpanel"
+                  id="navItem2"
+                  >HR Panel</a
+                >
+                <a
+                  class="nav-link span2 btn-one"
+                  href="#eventflow"
+                  id="navItem3"
+                  >Event </a
+                >
+                <a
+                  class="nav-link span2 btn-one"
+                  href="#whyconclave"
+                  id="navItem3"
+                  >Why Conclave? </a
+                >
+                <a
+                  class="nav-link span2 btn-one"
+                  href="#contactus"
+                  id="navItem4"
+                  >Contact Us</a
+                >
+                <a
+                  class="nav-link span2 btn-one"
+                  href="https://www.gniindia.org/corporate-resource-personnel.php"
+                  id="navItem4"
+                  >Team</a
+                >
+                
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="d-block d-sm-block d-md-none">
+        <nav
+          class="navbar navbar-expand-lg navbar-dark"
+          style="background-color: #00012b"
+        >
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="assessts/logow.webp" class="gni-logo h-auto" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ml-auto">
+                <a
+                  class="nav-link active span2 btn-one"
+                  id="navItem1"
+                  href="#AboutGNI"
+                >
+                  About
+                  <span class="sr-only">(current)</span>
+                </a>
+                <a
+                  class="nav-link span2 btn-one"
+                  href="#HRpanel"
+                  id="navItem2"
+                  >HR Panel</a
+                >
+                <a
+                  class="nav-link span2 btn-one"
+                  href="#eventflow"
+                  id="navItem3"
+                  >Event</a
+                >
+                <a
+                  class="nav-link span2 btn-one"
+                  href="#whyconclave"
+                  id="navItem3"
+                  >Why Conclave?</a
+                >
+                <a
+                  class="nav-link span2 btn-one"
+                  href="#contactus"
+                  id="navItem4"
+                  >Contact Us</a
+                >
+                <a
+                  class="nav-link span2 btn-one"
+                  href="#"
+                  id="navItem4"
+                  >Team</a
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="d-none d-sm-none d-md-block">
+        <div
+          class="banner-section-bg-container d-flex justify-content-center flex-column pt-9">
+          <div class="background_shade" >
+               <div class="" style="width: 50%;">
+                
+               <h1 class="heading four animate fadeLeft">HR <br/>CONCLAVE</h1>
+               <p class="heading2 four animate fadeLeft">CREATE | GROW | TRANSFORM</p>
+               <p class="heading1 text-animation" style="margin: 0;">2024</p>
+               <button class="register four animate fadeLeft" style="margin-left: 80px;"><a href="https://docs.google.com/forms/d/e/1FAIpQLSc23AjugHPIbxdwi8tNGg3r2ml7OIliIzebf3ScFAiZtyMz8A/viewform?usp=sf_link" style="color:#77d6dd ;">Registration</a></button>
+               </div>
+          </div>
+        </div>
+      </div>
+      <div
+      class="banner-section-bg d-flex justify-content-center flex-column pt-9 d-block d-sm-block d-md-none"
+    >
+    <div class="background_shade1" >
+        <div style="width: 50%;">
+        <h1 class="heading_small four animate fadeLeft">HR<br> CONCLAVE</h1>
+        <p class="heading2_small four animate fadeLeft">CREATE | GROW | TRANSFORM</p>
+        <p class="heading1_small four animate fadeLeft">2024</p>
+        <button class="register2 four animate fadeLeft" style="margin-left: 22px;"><a href="https://docs.google.com/forms/d/e/1FAIpQLSc23AjugHPIbxdwi8tNGg3r2ml7OIliIzebf3ScFAiZtyMz8A/viewform?usp=sf_link" style="color: #77d6dd;">Registration</a></button>
+        </div>
+   </div>
+    
+      
+    </div>
+
+    <div class="wcu-section pt-5pb-5" id="AboutGNI">
+        <div class="">
+          <div class="row">
+            <div class="col-12 ml-7">
+              <h1 class="wcu-section-heading pt-3" style="margin-left: 140px">
+                ABOUT GNI
+              </h1>
+              <p class="wcu-section-description"></p>
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+            <div class="col-12 col-md-6 ">
+              <div class="">
+                <h1 class=""></h1>
+                <p class="wcu-card-description reveal card3  p-3 m-2 d-none d-sm-none d-md-block" style="border-style: solid; border-width: 2px; border-color: black; border-radius: 10px;">
+                    Guru Nanak Institutions is one of the largest educational groups in India with 10,000+ Students currently enrolled in various programs of studies including Engineering and Technology, Pharmacy, Business Management and Dental Science. <br />
+                  <br />Founded by visionary industrialist and well known philanthropist Sri Tavinder Singh Kohli, Founder and Chairman of GNI. The beginning happened with the foundation of Guru Nanak Educational Society in the year 1998.<br />
+                  <br /> With the advent of changing hiring dynamics we at Guru Nanak Institutions are committed to prepare our students for the adverse impact of the market. This year has been a tough year with hiring numbers dropping in most of the organizations across the Globe. Talking of which networking, connecting and sharing wisdom emerges as the topmost priority.<br />
+                   <br/>To understand how Industry leaders are embracing this change and are gearing up to meet the challenges Guru Nanak Institutions with the support of WOW HR are organizing “HR Round Table Discussion” on 16th March 2024 where the focus is to prepare the students in this crisis situation.<br />
+                </p>
+                
+              </div>
+            </div>
+            <div class="d-none d-sm-none d-md-block">
+                <img src="assessts/buliding1.png" style="height: 350px;" class="" />
+              </div>
+              
+            <div class="col-12 col-md-4 d-none d-sm-none d-md-block">
+              <div class="card1  p-3 mb-3 " style="border-radius: 24px;">
+                <video
+                  width="480"
+                  height="440"
+                  autoplay
+                  muted
+                  loop
+                  style="border-radius: 10px"
+                >
+                  <source src="assessts/gni.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-row justify-content-center mr-1">
+            <p class="wcu-card-description reveal card4 p-3  m-4 d-block d-sm-block d-md-none" style="border-style: solid; border-width: 2px; border-color: black; border-radius: 10px;">
+              Guru Nanak Institutions is one of the largest educational groups in India with 10,000+ Students currently enrolled in various programs of studies including Engineering and Technology, Pharmacy, Business Management and Dental Science. <br />
+            <br />Founded by visionary industrialist and well known philanthropist Sri Tavinder Singh Kohli, Founder and Chairman of GNI. The beginning happened with the foundation of Guru Nanak Educational Society in the year 1998.<br />
+            <br /> With the advent of changing hiring dynamics we at Guru Nanak Institutions are committed to prepare our students for the adverse impact of the market. This year has been a tough year with hiring numbers dropping in most of the organizations across the Globe. Talking of which networking, connecting and sharing wisdom emerges as the topmost priority.<br />
+             <br/>To understand how Industry leaders are embracing this change and are gearing up to meet the challenges Guru Nanak Institutions with the support of WOW HR are organizing “HR Round Table Discussion” on 16th March 2024 where the focus is to prepare the students in this crisis situation.<br />
+          </p>
+        </div>
+            <div class="d-block d-sm-block d-md-none ">
+                <div class="d-flex flex-row justify-content-center ">
+                <div class="card2 reveal p-3 mb-3 mt-3" style="border-radius: 24px;">
+                  <video
+                    width="440"
+                    height="280"
+                    autoplay
+                    muted
+                    loop
+                    style="border-radius: 10px"
+                  >
+                    <source src="assessts/gni.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="topleader-section  p-5" id="HRpanel">
+    <div class="background_shade2">
+        <!-- Coordinatoors -->
+          <div class="col-12">
+            <h1 class="menu-section-heading pb-2">HR Panel:</h1>
+          </div>
+          <div class="d-flex flex-row flex-wrap" style="justify-content: space-evenly;">
+          
+          <div class="col-12 col-md-6 col-lg-3 mt-3">
+            <div class="card reveal" style="border-style: solid; border-width: 2px; border-color: black; border-radius: 24px;">
+                <div class="card__avatar" style="border-style: solid; border-width: 2px; border-color: black;"><img src="assessts/charles.jpeg" style="width: 160px; height: 160px; border-radius: 100%;"/></div>
+               <div class="d-flex flex-row justify-content-center mt-2"><img src="assessts/zoho.png" style="width: 120px;"/> </div>
+                <div class="card__title">Mr. CHARLES GODWIN</div>
+                <div class="card__subtitle">HR Leader</div>
+                <div class="card__wrapper">
+                    <button class="card__btn"><a href="https://www.linkedin.com/in/charlesgodwin/" >Linkedin</a></button>
+                </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mt-3">
+            <div class="card reveal" style="border-style: solid; border-width: 2px; border-color: black; border-radius: 24px;">
+                <div class="card__avatar" style="border-style: solid; border-width: 2px; border-color: black;"><img src="assessts/raja.jpeg" style="width: 160px; height: 160px; border-radius: 100%;"/></div>
+               <div class="d-flex flex-row justify-content-center mt-3"><img src="assessts/SEGULA_Technologies_logo.png" style="width: 120px;"/> </div>
+                <div class="card__title" style="text-align: center;">Mr. PANDI ALAGU RAJA MAHAMUNI</div>
+                <div class="card__subtitle">AGM - HR</div>
+                <div class="card__wrapper">
+                    <button class="card__btn"><a href="https://www.linkedin.com/in/pandialaguraja/" >Linkedin</a></button>
+                </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mt-3">
+            <div class="card reveal" style="border-style: solid; border-width: 2px; border-color: black; border-radius: 24px;">
+                <div class="card__avatar" style="border-style: solid; border-width: 2px; border-color: black;"><img src="assessts/prashanth.jpeg" style="width: 160px; height: 160px; border-radius: 100%;"/></div>
+               <div class="d-flex flex-row justify-content-center mt-3"><img src="assessts/aveva.png" style="width: 120px;"/> </div>
+                <div class="card__title">Mr. PRASHANTH NIDAMARTHY</div>
+                <div class="card__subtitle">Early Careers Manager - APAC</div>
+                <div class="card__wrapper">
+                    <button class="card__btn"><a href="https://www.linkedin.com/in/prashanthnidamarthy/" >Linkedin</a></button>
+                </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mt-3">
+            <div class="card reveal" style="border-style: solid; border-width: 2px; border-color: black; border-radius: 24px;">
+                <div class="card__avatar" style="border-style: solid; border-width: 2px; border-color: black;"><img src="assessts/kireet.png" style="width: 160px; height: 160px; border-radius: 100%;"/></div>
+               <div class="d-flex flex-row justify-content-center mt-3"><img src="assessts/infosys.png" style="width: 120px;"/> </div>
+                <div class="card__title">Mr. KIREET NUTHALAPATI</div>
+                <div class="card__subtitle">Senior Lead, Talent Acquisition</div>
+                <div class="card__wrapper">
+                    <button class="card__btn"><a href="https://www.linkedin.com/in/kireet-nuthalapati-322155a3/" >Linkedin</a></button>
+                </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mt-3">
+            <div class="card reveal" style="border-style: solid; border-width: 2px; border-color: black; border-radius: 24px;">
+                <div class="card__avatar" style="border-style: solid; border-width: 2px; border-color: black;"><img src="assessts/hardik.jpeg" style="width: 160px; height: 160px; border-radius: 100%;"/></div>
+               <div class="d-flex flex-row justify-content-center mt-3"><img src="assessts/arcadis.png" style="width: 120px;"/> </div>
+                <div class="card__title">Mr. HARDIK SHAH
+                </div>
+                <div class="card__subtitle">Talent Acquisition Lead- India
+                </div>
+                <div class="card__wrapper">
+                    <button class="card__btn"><a href="https://www.linkedin.com/in/hardik-shah-2b1b9023/
+                        " >Linkedin</a></button>
+                </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mt-3">
+            <div class="card reveal" style="border-style: solid; border-width: 2px; border-color: black; border-radius: 24px;">
+                <div class="card__avatar" style="border-style: solid; border-width: 2px; border-color: black;"><img src="assessts/joshua.jpeg" style="width: 160px; height: 160px; border-radius: 100%;"/></div>
+               <div class="d-flex flex-row justify-content-center mt-3"><img src="assessts/mphasis.jpeg" style="width: 120px;"/> </div>
+                <div class="card__title">Mr. JOSHUA DAVID M D
+                </div>
+                <div class="card__subtitle">India Campus Lead
+                </div>
+                <div class="card__wrapper">
+                    <button class="card__btn"><a href="https://www.linkedin.com/in/joshua-david-m-d-1b08368/
+                        " >Linkedin</a></button>
+                </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mt-3">
+            <div class="card reveal" style="border-style: solid; border-width: 2px; border-color: black; border-radius: 24px;">
+                <div class="card__avatar" style="border-style: solid; border-width: 2px; border-color: black;"><img src="assessts/krupali.jpeg" style="width: 160px; height: 160px; border-radius: 100%;"/></div>
+               <div class="d-flex flex-row justify-content-center mt-3"><img src="assessts/disney.png" style="width: 120px;"/> </div>
+                <div class="card__title">Ms. KRUPALI RAVAL
+                </div>
+                <div class="card__subtitle">Senior Manager HR
+                </div>
+                <div class="card__wrapper">
+                    <button class="card__btn"><a href="https://www.linkedin.com/in/krupali-raval-58278817/
+                        " >Linkedin</a></button>
+                </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mt-3">
+            <div class="card reveal" style="border-style: solid; border-width: 2px; border-color: black; border-radius: 24px;">
+                <div class="card__avatar" style="border-style: solid; border-width: 2px; border-color: black;"><img src="assessts/janani.jpeg" style="width: 160px; height: 160px; border-radius: 100%;"/></div>
+               <div class="d-flex flex-row justify-content-center mt-3"><img src="assessts/genzeon.png" style="width: 120px;"/> </div>
+                <div class="card__title">Ms. JANANI PRAKASH
+                </div>
+                <div class="card__subtitle">Head - People & Culture
+                </div>
+                <div class="card__wrapper">
+                    <button class="card__btn"><a href="https://www.linkedin.com/in/jananiprakaash/
+                        " >Linkedin</a></button>
+                </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mt-3">
+            <div class="card reveal" style="border-style: solid; border-width: 2px; border-color: black; border-radius: 24px;">
+                <div class="card__avatar" style="border-style: solid; border-width: 2px; border-color: black;"><img src="assessts/gokula.jpeg" style="width: 160px; height: 160px; border-radius: 100%;"/></div>
+               <div class="d-flex flex-row justify-content-center mt-3"><img src="assessts/servicenow.png" style="width: 120px;"/> </div>
+                <div class="card__title" style="text-align: center; font-size: 16px;">Mr. GOKULAKANNAN NARASIMHAN
+                </div>
+                <div class="card__subtitle" style="font-size: 12px; text-align: center;">Senior Manager , Early In Career Recruiting, APAC,Japan and EMEA
+                </div>
+                <div class="card__wrapper">
+                    <button class="card__btn"><a href="https://www.linkedin.com/in/gokulakannan-narasimhan-42a41b79/
+                        " >Linkedin</a></button>
+                </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mt-3">
+            <div class="card reveal" style="border-style: solid; border-width: 2px; border-color: black; border-radius: 24px;">
+                <div class="card__avatar" style="border-style: solid; border-width: 2px; border-color: black;"><img src="assessts/rekha.png" style="width: 160px; height: 160px; border-radius: 100%;"/></div>
+               <div class="d-flex flex-row justify-content-center mt-3"><img src="assessts/cgi.png" style="width: 80px;"/> </div>
+                <div class="card__title">Ms. REKHA V
+                </div>
+                <div class="card__subtitle">HR Leader
+                </div>
+                <div class="card__wrapper">
+                    <button class="card__btn"><a href="https://www.linkedin.com/in/rekha-she-her-632784a/
+                        " >Linkedin</a></button>
+                </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mt-3">
+            <div class="card reveal" style="border-style: solid; border-width: 2px; border-color: black; border-radius: 24px;">
+                <div class="card__avatar" style="border-style: solid; border-width: 2px; border-color: black;"><img src="assessts/sahil.jpeg" style="width: 160px; height: 160px; border-radius: 100%;"/></div>
+               <div class="d-flex flex-row justify-content-center mt-3"><img src="assessts/KPMG_logo.svg" style="width: 120px;"/> </div>
+                <div class="card__title">Mr. SAHIL NAYAR
+                </div>
+                <div class="card__subtitle">Senior Associate Director
+                </div>
+                <div class="card__wrapper">
+                    <button class="card__btn"><a href="https://www.linkedin.com/in/sahilnayar/
+                        " >Linkedin</a></button>
+                </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mt-3">
+            <div class="card reveal" style="border-style: solid; border-width: 2px; border-color: black; border-radius: 24px;">
+                <div class="card__avatar" style="border-style: solid; border-width: 2px; border-color: black;"><img src="assessts/krithivasans.jpeg" style="width: 160px; height: 160px; border-radius: 100%;"/></div>
+               <div class="d-flex flex-row justify-content-center mt-3"><img src="assessts/pickyourtrail-logo.png" style="width: 120px;"/> </div>
+                <div class="card__title">Mr. KRITHIVASAN S
+                </div>
+                <div class="card__subtitle">Director & Head - HR
+                </div>
+                <div class="card__wrapper">
+                    <button class="card__btn"><a href="https://www.linkedin.com/in/krithivasans/
+                        " >Linkedin</a></button>
+                </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mt-3">
+            <div class="card reveal" style="border-style: solid; border-width: 2px; border-color: black; border-radius: 24px;">
+                <div class="card__avatar" style="border-style: solid; border-width: 2px; border-color: black;"><img src="assessts/emmanuel.jpeg" style="width: 160px; height: 160px; border-radius: 100%;"/></div>
+               <div class="d-flex flex-row justify-content-center mt-3"><img src="assessts/epam.png" style="width: 120px;"/> </div>
+                <div class="card__title">Mr. EMMANUEL GOSULA
+                </div>
+                <div class="card__subtitle">Senior Resource Development Manager
+                </div>
+                <div class="card__wrapper">
+                    <button class="card__btn"><a href="https://www.linkedin.com/in/emmanuelgosula/
+                        " >Linkedin</a></button>
+                </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mt-3">
+            <div class="card reveal" style="border-style: solid; border-width: 2px; border-color: black; border-radius: 24px;">
+                <div class="card__avatar" style="border-style: solid; border-width: 2px; border-color: black;"><img src="assessts/sensougata.jpeg" style="width: 160px; height: 160px; border-radius: 100%;"/></div>
+               <div class="d-flex flex-row justify-content-center mt-3"><img src="assessts/hexaware.jpg" style="width: 120px;"/> </div>
+                <div class="card__title">Mr. SOUGATA SEN
+                </div>
+                <div class="card__subtitle">Head - Campus Recruitment, Early Career
+                </div>
+                <div class="card__wrapper">
+                    <button class="card__btn"><a href="https://www.linkedin.com/in/sensougata/
+                        " >Linkedin</a></button>
+                </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mt-3">
+            <div class="card reveal" style="border-style: solid; border-width: 2px; border-color: black; border-radius: 24px;">
+                <div class="card__avatar" style="border-style: solid; border-width: 2px; border-color: black;"><img src="assessts/pavani.jpeg" style="width: 160px; height: 160px; border-radius: 100%;"/></div>
+               <div class="d-flex flex-row justify-content-center mt-3"><img src="assessts/tech.png" style="width: 120px;"/> </div>
+                <div class="card__title">Mrs. PAVANI SARIPELLA
+                </div>
+                <div class="card__subtitle" style="text-align: center;">Talent Acquisition: BPS Function Head(NAM, Africas, Middle East and part of India)
+                </div>
+                <div class="card__wrapper">
+                    <button class="card__btn"><a href="https://www.linkedin.com/in/pavanisaripella/
+                        " >Linkedin</a></button>
+                </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mt-3">
+            <div class="card reveal" style="border-style: solid; border-width: 2px; border-color: black; border-radius: 24px;">
+                <div class="card__avatar" style="border-style: solid; border-width: 2px; border-color: black;"><img src="assessts/saravanan.jpeg" style="width: 160px; height: 160px; border-radius: 100%;"/></div>
+               <div class="d-flex flex-row justify-content-center mt-3"><img src="assessts/prochant.jpg" style="width: 120px;"/> </div>
+                <div class="card__title">Mr. SARAVANAN T
+                </div>
+                <div class="card__subtitle">President HR | CHRO
+                </div>
+                <div class="card__wrapper">
+                    <button class="card__btn"><a href="https://www.linkedin.com/in/saravanan-thinagarasamy-0758289/
+                        " >Linkedin</a></button>
+                </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mt-3">
+            <div class="card reveal" style="border-style: solid; border-width: 2px; border-color: black; border-radius: 24px;">
+                <div class="card__avatar" style="border-style: solid; border-width: 2px; border-color: black;"><img src="assessts/jitender.jpeg" style="width: 160px; height: 160px; border-radius: 100%;"/></div>
+               <div class="d-flex flex-row justify-content-center mt-3"><img src="assessts/cognizant.jpeg" style="width: 120px;"/> </div>
+                <div class="card__title">Mr. JITENDER SINGH
+                </div>
+                <div class="card__subtitle">HR Manager-Campus Recruitment
+                </div>
+                <div class="card__wrapper">
+                    <button class="card__btn"><a href="https://www.linkedin.com/in/jitender-singh-29b22260/
+                        " >Linkedin</a></button>
+                </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mt-3">
+            <div class="card reveal" style="border-style: solid; border-width: 2px; border-color: black; border-radius: 24px;">
+                <div class="card__avatar" style="border-style: solid; border-width: 2px; border-color: black;"><img src="assessts/chalapathy.jpeg" style="width: 160px; height: 160px; border-radius: 100%;"/></div>
+               <div class="d-flex flex-row justify-content-center mt-3"><img src="assessts/virtusa.png" style="width: 120px;"/> </div>
+                <div class="card__title">Mr. CHALAPATHY MEKA VENKATA
+                </div>
+                <div class="card__subtitle" style="text-align: center; ">Senior Director & Head - Talent Management and Graduate Talent Program
+                </div>
+                <div class="card__wrapper">
+                    <button class="card__btn"><a href="https://www.linkedin.com/in/chalapathy-meka-venkata-1696518/
+                        " >Linkedin</a></button>
+                </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mt-3">
+            <div class="card reveal" style="border-style: solid; border-width: 2px; border-color: black; border-radius: 24px;">
+                <div class="card__avatar" style="border-style: solid; border-width: 2px; border-color: black;"><img src="assessts/reena.jpeg" style="width: 160px; height: 160px; border-radius: 100%;"/></div>
+               <div class="d-flex flex-row justify-content-center mt-3"><img src="assessts/keolis.png" style="width: 120px;"/> </div>
+                <div class="card__title">Dr. REENA DAS
+                </div>
+                <div class="card__subtitle">Chief Human Resource Officer
+                </div>
+                <div class="card__wrapper">
+                    <button class="card__btn"><a href="https://www.linkedin.com/in/dr-reena-das-1434255a/
+                        " >Linkedin</a></button>
+                </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mt-3">
+            <div class="card reveal" style="border-style: solid; border-width: 2px; border-color: black; border-radius: 24px;">
+                <div class="card__avatar" style="border-style: solid; border-width: 2px; border-color: black;"><img src="assessts/manoj.jpeg" style="width: 160px; height: 160px; border-radius: 100%;"/></div>
+               <div class="d-flex flex-row justify-content-center mt-3"><img src="assessts/hexagon.png" style="width: 120px;"/> </div>
+                <div class="card__title">Mr. MANOJ PATLOORI
+                </div>
+                <div class="card__subtitle">Head- Talent Acquisition
+                </div>
+                <div class="card__wrapper">
+                    <button class="card__btn"><a href="https://www.linkedin.com/in/mkumar16/
+                        " >Linkedin</a></button>
+                </div>
+            </div>
+          </div>
+          
+       </div>
+    </div>
+    </div>
+    <!--Eventflow-->
+    <div class="timeline" id="eventflow">
+      <div class="col-12 ml-7 d-none d-sm-none d-md-block">
+        <h1 class="wcu-section-heading pt-3 text-start" style="margin-left: 10px">
+          Event Flow
+        </h1>
+        <p class="wcu-section-description"></p>
+      </div>
+      <div class="col-12 ml-7 d-block d-sm-block d-md-none">
+        <h1 class="wcu-section-heading pt-3 " style="text-align: center;">
+          Event Flow
+        </h1>
+        <p class="wcu-section-description"></p>
+      </div>
+      <div class="container2 left reveal">
+        <div class="date" >10.15AM –<br/> 10.30AM</div>
+        <i class="icon fa fa-clock-o" aria-hidden="true"></i>
+        <div class="content">
+          <h2 style="color: #183b56; font-weight: bold;">EVENT/ACTIVITY:</h2>
+          <p>
+            Inauguration of HR Panel Discussion
+          </p>
+        </div>
+      </div>
+      <div class="container2 right reveal">
+        <div class="date">10.30AM –<br/> 10.50AM</div>
+        <i class="icon fa fa-clock-o" aria-hidden="true"></i>
+        <div class="content">
+          <h2 style="color: #183b56; font-weight: bold;">EVENT/ACTIVITY:</h2>
+          <p>
+            Fireside Chat
+          </p>
+        </div>
+      </div>
+      <div class="container2 left reveal">
+        <div class="date">10.55AM –<br/> 1.20PM</div>
+        <i class="icon fa fa-clock-o" aria-hidden="true"></i>
+        <div class="content">
+          <h2 style="color: #183b56; font-weight: bold;">EVENT/ACTIVITY:</h2>
+          <p>
+            Panel – 1 HR’s Discussion
+          </p>
+        </div>
+      </div>
+      <div class="container2 right reveal">
+        <div class="date">1.20PM –<br/> 2.00PM </div>
+        <i class="icon fa fa-clock-o" aria-hidden="true"></i>
+        <div class="content">
+          <h2 style="color: #183b56; font-weight: bold;">EVENT/ACTIVITY:</h2>
+          <p>
+            LUNCH
+          </p>
+        </div>
+      </div>
+      <div class="container2 left reveal">
+        <div class="date">2.00PM –<br/> 4.30PM</div>
+        <i class="icon fa fa-clock-o" aria-hidden="true"></i>
+        <div class="content">
+          <h2 style="color: #183b56; font-weight: bold;">EVENT/ACTIVITY:</h2>
+          <p>
+            Panel – 2 HR’s Discussion
+          </p>
+        </div>
+      </div>
+      <div class="container2 right reveal">
+        <div class="date">4.30PM –<br/> 5.30PM</div>
+        <i class="icon fa fa-clock-o" aria-hidden="true"></i>
+        <div class="content">
+          <h2 style="color: #183b56; font-weight: bold;">EVENT/ACTIVITY:</h2>
+          <p>
+            Band Performance
+          </p>
+        </div>
+      </div>
+      <div class="container2 left reveal">
+        <div class="date">5.30PM –<br/> 6.00PM</div>
+        <i class="icon fa fa-clock-o" aria-hidden="true"></i>
+        <div class="content">
+          <h2 style="color: #183b56; font-weight: bold;">EVENT/ACTIVITY:</h2>
+          <p>
+            Felicitation of Guests
+          </p>
+        </div>
+      </div>
+    </div>
+     
+
+
+ <!--whyconclave-->
+
+ <div class="wcu-section  pt-5pb-5 " style="background-image: linear-gradient(120deg,#feac5e, #dda0e4
+ , #6dd1d8  );"  id="whyconclave">
+  <div class="">
+    <div class="row">
+      <div class="col-12 ml-7">
+        <h1 class="wcu-section-heading pt-3" style="margin-left: 120px">
+          Why HR Conclave?
+        </h1>
+        <p class="wcu-section-description"></p>
+      </div>
+      <div class="d-flex flex-row justify-content-center">
+      <div class="" style="margin-left: 150px;">
+        <div class=" ">
+          <h1 class=""></h1>
+          <p class="wcu-card-description reveal card5 p-3 m-2 d-none d-sm-none d-md-block" style="border-style: solid; border-width: 2px; border-color: black; border-radius: 10px;">
+            It's getting harder for HR professionals and new hires alike as markets contract and employment decline. The days of several companies hiring hundreds of students directly off college are long gone. The student who possesses the necessary abilities in line with the market will now be hired. All students must possess the flexibility to relearn and acquire new abilities. This is not limited to employing new employees; companies are now requesting that lateral hires unlearn existing skills and pick up necessary new technology. <br />
+            <br />At GNI, we prepare our students for the demands of the job market by keeping them abreast of developments in the industry. In an effort to assist both our students and those from other schools and institutions, we are planning an HR Conclave for March 16, 2024, on our campus. HR professionals from a variety of firms are attending this conclave and will be assisting the students in developing the best strategy for securing the right job. Each HR is just like a book having chapters of experiences that are very important for every student. These lessons are worth millions to the students, and we are incredibly grateful to all of the HR professionals who have consistently helped us keep our students up to date with the latest developments in the industry.<br />
+            <br /><span class="span1">“Campus placements at both engineering and B-schools, are going down looming concern.” </span>     <br />
+             <br/>Points To be Considered:<br/><span class="span2">Layoffs and Downsizing:</span>One97 Communications, the parent company of Paytm, has announced a "slight reduction in workforce" as a measure to reduce costs. Media reports indicate that the number of job losses exceeds 1,000, constituting close to 10% of the company's employees.
+             Paytm's downsizing is part of a broader trend within the industry, where several companies have resorted to job cuts following a prolonged period of limited funding and investor demands for clearer revenue and profit visibility. According to layoff.fyi, a total of 16,298 individuals have been laid off in 2023. However, this figure is likely to be considerably higher as many of the 125 companies that reported layoffs did not disclose the exact number of employees affected.
+              <br /><span class="span2">Unprecedented New Age of Progress (AI & AUTOMATION):</span>More than a quarter of job roles are facing substantial disruption due to automation. In 2016, this equated to 36 million jobs, with over 70% at high risk of being replaced by automation. Projections for 2030 suggest that 36% of American workers will face moderate exposure to these technologies, while 39%—equivalent to 57 million jobs—will have minimal exposure.
+              As per experts, Google is considering a significant restructuring of its 30,000-person advertising sales division, driven by its accelerated integration of AI technology, leading to concerns about possible layoffs. This comes in the wake of the company already letting go of nearly 12,000 employees in 2023. As the year approaches its end, the central issue confronting India is whether its remarkable economic growth can generate sufficient employment opportunities, particularly in the face of the most significant disruption of all: the rise of artificial intelligence (AI).
+              <br/><span class="span2">Skill Doom (Skill Based Hirings):</span>In a post on X, RPG Group chairman Harsh Goenka acknowledges widespread unemployment concerns but notes his company's struggle to find skilled labor. He cites challenges including shortages of construction workers, truck drivers, and plantation workers, expressing bewilderment at the absence of solutions.
+              The issue appears to be worsening continuously. TeamLease Services data indicates that India is facing a concerning shortage of approximately 150 million skilled workers, up from 138 million in 2020. Key sectors affected include automotive and auto components (35 million), construction (33 million), textiles and clothing (26 million), transportation and logistics (18 million), retail (17 million), and healthcare (13 million), among others.                            
+          </p>
+          
+        </div>
+      </div> 
+    </div>
+    <div class="d-flex flex-row justify-content-center mr-1">
+      <p class="wcu-card-description reveal card6 p-3  m-4 d-block d-sm-block d-md-none" style="border-style: solid; border-width: 2px; border-color: black; border-radius: 10px;">
+        It's getting harder for HR professionals and new hires alike as markets contract and employment decline. The days of several companies hiring hundreds of students directly off college are long gone. The student who possesses the necessary abilities in line with the market will now be hired. All students must possess the flexibility to relearn and acquire new abilities. This is not limited to employing new employees; companies are now requesting that lateral hires unlearn existing skills and pick up necessary new technology. <br />
+            <br />At GNI, we prepare our students for the demands of the job market by keeping them abreast of developments in the industry. In an effort to assist both our students and those from other schools and institutions, we are planning an HR Conclave for March 16, 2024, on our campus. HR professionals from a variety of firms are attending this conclave and will be assisting the students in developing the best strategy for securing the right job. Each HR is just like a book having chapters of experiences that are very important for every student. These lessons are worth millions to the students, and we are incredibly grateful to all of the HR professionals who have consistently helped us keep our students up to date with the latest developments in the industry.<br />
+            <br /><span class="span1">“Campus placements at both engineering and B-schools, are going down looming concern.” </span>     <br />
+             <br/>Points To be Considered:<br/><span class="span2">Layoffs and Downsizing:</span>One97 Communications, the parent company of Paytm, has announced a "slight reduction in workforce" as a measure to reduce costs. Media reports indicate that the number of job losses exceeds 1,000, constituting close to 10% of the company's employees.
+             Paytm's downsizing is part of a broader trend within the industry, where several companies have resorted to job cuts following a prolonged period of limited funding and investor demands for clearer revenue and profit visibility. According to layoff.fyi, a total of 16,298 individuals have been laid off in 2023. However, this figure is likely to be considerably higher as many of the 125 companies that reported layoffs did not disclose the exact number of employees affected.
+              <br /><span class="span2">Unprecedented New Age of Progress (AI & AUTOMATION):</span>More than a quarter of job roles are facing substantial disruption due to automation. In 2016, this equated to 36 million jobs, with over 70% at high risk of being replaced by automation. Projections for 2030 suggest that 36% of American workers will face moderate exposure to these technologies, while 39%—equivalent to 57 million jobs—will have minimal exposure.
+              As per experts, Google is considering a significant restructuring of its 30,000-person advertising sales division, driven by its accelerated integration of AI technology, leading to concerns about possible layoffs. This comes in the wake of the company already letting go of nearly 12,000 employees in 2023. As the year approaches its end, the central issue confronting India is whether its remarkable economic growth can generate sufficient employment opportunities, particularly in the face of the most significant disruption of all: the rise of artificial intelligence (AI).
+              <br/><span class="span2">Skill Doom (Skill Based Hirings):</span>In a post on X, RPG Group chairman Harsh Goenka acknowledges widespread unemployment concerns but notes his company's struggle to find skilled labor. He cites challenges including shortages of construction workers, truck drivers, and plantation workers, expressing bewilderment at the absence of solutions.
+              The issue appears to be worsening continuously. TeamLease Services data indicates that India is facing a concerning shortage of approximately 150 million skilled workers, up from 138 million in 2020. Key sectors affected include automotive and auto components (35 million), construction (33 million), textiles and clothing (26 million), transportation and logistics (18 million), retail (17 million), and healthcare (13 million), among others.
+    </p>
+  </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="follow-us-section pt-5 pb-5 mb-3 mt-3" id="contactus">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="follow-us-section-heading">Contact Us</h1>
+          </div>
+          <div class="col-12">
+            <div class="d-flex flex-row justify-content-center">
+              <div class="follow-us-icon-container">
+                <a
+                  href="https://twitter.com/GNInstitutions/"
+                  ><i class="fa fa-linkedin-square icon" aria-hidden="true"></i>
+              </div>
+              <div class="follow-us-icon-container">
+                <a
+                  href=""
+                  ><i class="fab fa-instagram icon"></i
+                ></a>
+              </div>
+              <div class="follow-us-icon-container">
+                <a
+                  href="https://www.facebook.com/gurunanakinstitution/"
+                  ><i class="fab fa-facebook icon"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex flex-row justify-content-center flex-wrap">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="shadow contact-card p-3 mb-3" style="background-color: white;">
+            <h1 class="contact-title span2" >Training & Placement Executive</h1>
+            <p>Mr. V Sai Babu  - 9581578068<br>
+              Email Id: sai.gnitc@gmail.com</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="shadow contact-card p-3 mb-3" style="background-color: white;">
+            <h1 class="contact-title span2">Student Co-Ordinator</h1>
+            <p>Narshimha Reddy  - 9390985083<br>
+              Email Id: narsimharedy06@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-row justify-content-center">
+        <div class="website-count"><p class="visitor">Visitors:<a href="https://www.hitwebcounter.com" target="_blank">
+          <img src="https://hitwebcounter.com/counter/counter.php?page=11937992&style=0024&nbdigits=5&type=page&initCount=0" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></a>               </p></div>
+        <!--<button id="reset">Reset</button>-->
+        </div>
+    </div>
+
+
+
+
+    <section class="footer">
+        <div class="box-container d-flex flex-row">
+          <div class="box">
+            <img src="assessts/gnilogo.png" style="width: 300px" />
+            <p>
+              Guru Nanak Institutions is one of the largest educational groups in
+              India with 10,000+ Students currently enrolled in various programs
+              of studies including Engineering and Technology, Pharmacy, Business
+              Management and Dental Science.
+            </p>
+          </div>
+  
+          <div class="box">
+            <h3 style="font-weight: bold">ABOUT US</h3>
+            <button  class="top-button"><a href="https://www.gniindia.org/top-leadership.php" style="color: white; font-weight: bold;"
+              ><i class="fas fa-chevron-circle-right" ></i>TOP LEADERSHIP
+            </a></button> 
+            <a href="https://www.gniindia.org/vision-mission.php"
+              ><i class="fas fa-chevron-circle-right"></i> VISION & MISSION</a
+            >
+            
+            <a href="https://www.gniindia.org/genesis.php"
+              ><i class="fas fa-chevron-circle-right"></i>GENESIS
+            </a>
+            
+            <br>
+          </div>
+          <div class="box">
+            <h3 style="font-weight: bold">Get In touch</h3>
+            <br />
+            <h3 style="color: red">Corporate Office</h3>
+            <p>
+              <i class="fa fa-map-marker" aria-hidden="true"></i> Plot No.B2, 2nd
+              Floor, Above Bata Showroom, Vikrampuri Colony, Kharkhana Road,
+              Sec-500 009, Telangana INDIA
+            </p>
+  
+            <h3 style="color: red">Campus Address</h3>
+            <p>
+              <i class="fa fa-map-marker" aria-hidden="true"></i> Ibrahimpatnam,
+              R. R. Dist, Hyderabad - 501506, TELANGANA, INDIA
+            </p>
+          </div>
+        </div>
+  
+        <h1 class="credit">Designed by <a href="https://www.linkedin.com/in/hima-vamsi-297744250"> Hima Vamsi</a></h1>
+<script type="text/javascript" src="index.js"></script>
+
+
+</body>
+</html>
+
+
+
