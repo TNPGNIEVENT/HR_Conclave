@@ -124,7 +124,7 @@ object-fit: cover;
   }
 
   .register {
-    --color: #77d6dd;
+    --color: #dda0e4;
     --color2: rgb(10, 25, 30);
     padding: 0.8em 1.75em;
     background-color: transparent;
@@ -179,16 +179,74 @@ object-fit: cover;
     transform: scale(.98);
    }
 
+   .register1 {
+    --color: #77d6dd;
+    --color2: rgb(10, 25, 30);
+    padding: 0.8em 1.75em;
+    background-color: transparent;
+    border-radius: 6px;
+    border: .3px solid var(--color);
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 300;
+    font-size: 17px;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    color: var(--color);
+   }
+   
+   .register1::after, .register1::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+   }
+   
+   .register1::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .register1:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .register1:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+   }
+   
+   .register1:hover {
+    color: var(--color2);
+   }
+   
+   .register1:active {
+    filter: brightness(.7);
+    transform: scale(.98);
+   }
+
+
+
 
    .banner-section-bg{
     background-image: url("assessts/HR.jpeg");
-    height: 280px;
+    height: auto;
     background-size: cover;
     width: 100%;
   }
 
   .background_shade1{
-    height: 280px;
+    height: auto;
     width:100%;
     background-image: linear-gradient(to right, black , transparent);
     opacity: 1;
@@ -201,7 +259,7 @@ object-fit: cover;
     padding-top: 28px;
     padding-left: 28px;
     font-size: 28px;
-    font-family: georgia, serif;
+    font-family: sans-serif;
 }
 .heading1_small{
     color: white;
@@ -216,7 +274,7 @@ object-fit: cover;
 }
 
 .register2 {
-    --color: #77d6dd;
+    --color: #dda0e4;
     --color2: rgb(10, 25, 30);
     padding: 0.8em 1.75em;
     background-color: transparent;
@@ -227,7 +285,7 @@ object-fit: cover;
     overflow: hidden;
     cursor: pointer;
     z-index: 1;
-    width: 120px;
+    width: 90px;
     text-align: center;
     font-weight: 300;
     font-size: 12px;
@@ -269,6 +327,66 @@ object-fit: cover;
    }
    
    .registe2r:active {
+    filter: brightness(.7);
+    transform: scale(.98);
+   }
+
+
+
+   .register3 {
+    --color: #77d6dd;
+    --color2: rgb(10, 25, 30);
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 6px;
+    border: .3px solid var(--color);
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    width: 95px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 12px;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    color: var(--color);
+   }
+   
+   .register3::after, .register3::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+   }
+   
+   .register3::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .register3:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .register3:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+   }
+   
+   .register3:hover {
+    color: var(--color2);
+   }
+   
+   .register3:active {
     filter: brightness(.7);
     transform: scale(.98);
    }
@@ -1069,7 +1187,7 @@ object-fit: cover;
 
   .container2.left .content,
   .container2.right .content {
-    padding: 30px 30px 30px 90px;
+    padding: 30px 30px 30px 78px;
     border-radius: 500px 0 0 500px;
   }
 }
@@ -1121,4 +1239,20 @@ object-fit: cover;
   padding: 8px 20px;
   color: white;
   border: 0;
+}
+
+
+
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  border-radius: 50px;
+  background-color:#feac5e ;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  color: white;
 }
